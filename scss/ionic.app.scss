@@ -1,0 +1,141 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+$purple:                          #9A68C7;
+
+$searchbar-ios-background-color: rgb(250,235,215);
+
+*/
+$positive:                        	#0AC3A1 !default;
+
+
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+
+// sass variables -----------------------
+$positive:            #80D8CC !default;
+$icon-size :     50px;
+$icon-add-color: #9400D3;
+$a-text-decoration: none;
+$a-color: #696969;
+$orange: #FFA500;
+$light-green: #c1e471;
+
+
+// sass mixin-----------------------------
+
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
+
+@include placeholder {
+    font-style:italic;
+    color: gray;
+    font-weight:400;
+}
+//sass Nesting--------------------------------
+
+div{
+	ul{
+		li{
+			a{
+				font-style: italic;
+				text-decoration: $a-text-decoration;
+				color: $a-color;
+				font-size: 13px;
+			}
+		}
+	}	
+}
+//----------------------------------------------
+
+
+
+#buttonicon{
+	font-size: $icon-size;
+	color: $icon-add-color;
+}
+
+
+
+#search{
+	background-color: $orange;
+	color: white;
+	border-bottom: solid 3px #D2691E;
+	width: 50px;
+	font-size: 13px;
+	font-weight: 900
+}
+.cal{
+	float: right;
+	font-size: 15px;
+
+}
+.pic{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+.women{
+	width: 6%;
+}	 
+.tabs{
+		background-color: 	#0AC3A1 !important;
+		color: #F9FDFE !important;
+}
+
+body{
+	color:#696969;
+}
+h2,h3, h4, h1{
+	color:#545454;
+	
+}
+.view{
+	font-weight: 700!important;
+}
+#addbuttom{
+	background-color: $orange;
+	border-bottom: solid 3px #D2691E;
+	color:white;
+	font-weight: 900;
+}
+#date{
+	padding-top: -2px;
+	margin-bottom:1px;
+
+}
+#editbutton{
+	font-size: 12px;
+}
+h2{
+	font-size: 20px;
+	font-weight: 1100;
+	color: black;
+}

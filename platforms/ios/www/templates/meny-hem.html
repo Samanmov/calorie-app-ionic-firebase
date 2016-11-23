@@ -1,0 +1,14 @@
+
+<ion-view view-title="Hem">
+  <ion-content  class="padding">  
+    <div ng-controller="homeCtrl">
+             <div class="list card">
+                <div class="item item-body" ng-repeat="hem in home track by $index" >
+                    <h2>{{hem.header}}</h2>
+                    <p>{{hem.stycke}}</p>
+                    <img class="pic" ng-src="{{hem.pic}}">
+                </div>
+            </div>
+        </div>
+  </ion-content>
+</ion-view>
